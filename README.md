@@ -1,3 +1,8 @@
+This repo contains code for the video log at https://youtu.be/95ZgCv9cnls
+
+The video log demonstrates implementation of AWS Kinesis Producer and Consumer using Java + LocalStack setup.
+
+It uses AWS KPL(Kinesis Producer Library) and KCL(Kinesis Consumer Library) for Java.
 
 ## Start LocalStack
 
