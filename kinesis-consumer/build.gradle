@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'com.therdnotes'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "software.amazon.kinesis:amazon-kinesis-client:$kinesisClientVersion"
+
+    runtimeOnly "org.slf4j:slf4j-simple:$slf4jSimpleVersion"
+}
+
+java {
+    sourceCompatibility = JavaVersion.toVersion("17")
+    targetCompatibility = JavaVersion.toVersion("17")
+}
+
+test {
+    useJUnitPlatform()
+}
